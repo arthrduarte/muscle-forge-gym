@@ -43,30 +43,37 @@ li a:hover {
     color: black;
     transition-duration: 0.2s;
 }
-nav ul li img {
+.logo {
     width: 10%;
     align-items: center;
     float: left;
 }
 
-.banner-image {
-    width: 100%;
+#banner {
+    position: relative;
+    background:url(images/banner.png) no-repeat center;
+    background-size: cover;
+    height: 30rem;
+    overflow: hidden;
 }
 
 .container {
-    position: relative;
-
-}
-.banner-text {
+    color: white;
     position: absolute;
-    top: 2.5%;
-    left: 12%;
-    color: #F1F1F1;
-    font-size: 36pt;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-.banner-text h1 {
+
+.container h1 {
     color: #E2C044;
-    font-size: 56pt;
+    font-size: 88px;
+}
+
+.banner-text {
+    display: block;
+    font-size: 26px;
 }
 
 .locations-title {
@@ -113,7 +120,7 @@ iframe:hover {
 } 
 
 
- .plans-container {
+.plans-container {
     display: flex;
     justify-content: space-around;
 }
@@ -122,7 +129,11 @@ iframe:hover {
     background-color: #F1F1F1;
     border-radius: 10px;
     padding: 30px;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
     width: 20%;
     font-size: 20pt;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -182,6 +193,11 @@ iframe:hover {
 
 .plans-card h3 {
     font-size: 42pt;
+}
+
+.plans-price {
+    display: flex;
+    flex-direction:column;
 }
 
 .timetable-title {
@@ -253,6 +269,16 @@ footer {
 
 .footer-social, .footer-contact, .footer-pages {
     flex: 1;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: white
+}
+
+.footer-social a:hover {
+    text-decoration: none;
+    color: blue
 }
 
 .footer-contact form {

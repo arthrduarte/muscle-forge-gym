@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Muscle Forge Gym</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
 </head>
 <body>
     <nav>
@@ -23,16 +24,8 @@
     <main>
         <section id="banner">
             <div class="container">
-                <img src="images/banner.png" alt="Banner with a barbell image" class="banner-image">
-                <div class="banner-text">
-                    <h1>Enroll today and receive:</h1>
-                    <ul>
-                        <li>First Month Free Membership</li>
-                        <li>Personal Training Session</li>
-                        <li>Nutrition Consultation</li>
-                        <li>Access to All Classes</li>
-                    </ul>
-                </div>
+                <h1><span>Enroll today and receive:</span></h1>
+                <span class="banner-text">First Month Free Membership | Personal Training Session | Nutrition Consultation | Access to All Classes</span>
             </div>
         </section>
 
@@ -78,43 +71,55 @@
             </div>
         </section>
 
-        <section id="plans"> <!--Need to figure out how to make this shit be closer to the other section-->
+        <section id="plans">
             <h1 class="plans-title">Plans</h1>
             <div class="plans-container">
                 <div class="plans-card">
-                    <h2>Standard 🤸</h2>
-                    <ul>
-                        <li>Access to gym facilities during regular hours.</li>
-                        <li>Participation in regular fitness classes.</li>
-                        <li>Basic nutrition guidance and resources.</li>
-                        <li>Standard access hours or specific days.</li>
-                    </ul>
-                    <h3>$ 9,99/month</h3>
-                    <button class="plans-button">ENROLL TODAY</button>
+                    <div class="plans-text">
+                        <h2>Standard 🤸</h2>
+                        <ul>
+                            <li>Access to gym facilities during regular hours.</li>
+                            <li>Participation in regular fitness classes.</li>
+                            <li>Basic nutrition guidance and resources.</li>
+                            <li>Standard access hours or specific days.</li>
+                        </ul>
+                    </div>
+                    <div class="plans-price">
+                        <h3>$ 9,99/month</h3>
+                        <button class="plans-button">ENROLL TODAY</button>
+                    </div>
                 </div>
                 <div class="plans-card">
-                    <h2>Fit 💪</h2>
-                    <ul>
-                        <li>Every benefit of STANDARD plan</li>
-                        <li>Unlimited access to all gym facilities..</li>
-                        <li>Participation in all fitness classes.</li>
-                        <li>Set number of personal training sessions per month.</li>
-                        <li>Personalized nutrition guide.</li>
-                        <li>24/7 access to the gym.</li>
-                    </ul>
-                    <h3>$ 15,99/month</h3>
-                    <button class="plans-button">ENROLL TODAY</button>
+                    <div class="plans-text">
+                        <h2>Fit 💪</h2>
+                        <ul>
+                            <li>Every benefit of STANDARD plan</li>
+                            <li>Unlimited access to all gym facilities..</li>
+                            <li>Participation in all fitness classes.</li>
+                            <li>Set number of personal training sessions per month.</li>
+                            <li>Personalized nutrition guide.</li>
+                            <li>24/7 access to the gym.</li>
+                        </ul>
+                    </div>
+                    <div class="plans-price">
+                        <h3>$ 15,99/month</h3>
+                        <button class="plans-button">ENROLL TODAY</button>
+                    </div>
                 </div>
                 <div class="plans-card">
-                    <h2>Premium 👑</h2> 
-                    <ul>
-                        <li>Every benefit of FIT plan</li>
-                        <li>Priority personal training sessions with top trainers.</li>
-                        <li>Exclusive benefits, access to special events, and discounts on merchandise or supplements.</li>
-                        <li>Locker access.</li>
-                    </ul>
-                    <h3>$ 19,99/month</h3>
-                    <button class="plans-button">ENROLL TODAY</button>
+                    <div class="plans-text">
+                        <h2>Premium 👑</h2> 
+                        <ul>
+                            <li>Every benefit of FIT plan</li>
+                            <li>Priority personal training sessions with top trainers.</li>
+                            <li>Exclusive benefits, access to special events, and discounts on merchandise or supplements.</li>
+                            <li>Locker access.</li>
+                        </ul>
+                    </div>
+                    <div class="plans-price">
+                        <h3>$ 19,99/month</h3>
+                        <button class="plans-button">ENROLL TODAY</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -161,22 +166,7 @@
                                 <td class="time">9AM</td>
                                 <td class="event" colspan="5">Spinning Class</td>
                             </tr>
-                            <tr>
-                                <td class="time">10AM</td>
-                                <td class="event" colspan="5" rowspan="5"></td>
-                            </tr>
-                            <tr>
-                                <td class="time">11AM</td>
-                            </tr>
-                            <tr>
-                                <td class="time">12PM</td>
-                            </tr>
-                            <tr>
-                                <td class="time">1PM</td>
-                            </tr>
-                            <tr>
-                                <td class="time">2PM</td>
-                            </tr>
+
                             <tr>
                                 <td class="time">3PM</td>
                                 <td class="event">Boxing Class</td>
@@ -215,14 +205,8 @@
                             </tr>
                             <tr>
                                 <td class="time">8PM</td>
-                                <td class="event" colspan="5" rowspan="3"></td>
+                                <td class="event" colspan="5"></td>
                                 <td class="event" colspan="2">Gym Closes</td>
-                            </tr>
-                            <tr>
-                                <td class="time">9PM</td>
-                            </tr>
-                            <tr>
-                                <td class="time">10PM</td>
                             </tr>
                             <tr>
                                 <td class="time">11PM</td>
@@ -238,7 +222,7 @@
         <div class="footer-container">
             <div class="footer-social">
                 <img src="images/logo.png" alt="Muscle Forge Logo">
-                <p>contact@muscleforge.com</p>
+                <a href="mailto:contact@muscleforge.com?subject=inquiry%20from%20website"><p>contact@muscleforge.com</p></a>
                 <p><u>@muscleforge</u> on all social media</p>
             </div>
             <div class="footer-contact">
