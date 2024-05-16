@@ -15,7 +15,7 @@ The website aims to attract and engage potential members while maintaining consi
 The website will target traditional monitor resolutions of 1024X768 and greater.
 
 ## Semantic Design Guide
-### <nav>
+### nav
 •	Expected Use: The `<nav>` element is used to define a section of navigation links for the website.
 •	Names (id=): N/A
 •	Font Choices: Font family 'Bebas Neue' is used for the navigation links.
@@ -23,14 +23,14 @@ The website will target traditional monitor resolutions of 1024X768 and greater.
 •	Standard Images: The Muscle Forge Gym logo is used in the navigation. Size is 86.23x86.23px
 •	Layout Location: It is positioned at the top of the webpage.
 
-### <main>:
+### main:
 •	Expected Use: The `<main>` element represents the main content of the webpage.
 •	Names (id=): N/A
 •	Font Choices: Font family 'Bebas Neue' is used for the main content.
 •	Color Choices: The background color is a light gray (#F1F1F1).
 •	Layout Location: It contains all the main content sections.
   
-### <section id="banner">:
+### section id="banner":
 •	Expected Use: This section is used for the main banner content of the webpage.
 •	Names (id=): banner
 •	Font Choices: Font family 'Bebas Neue' and 'Roboto' are used for the text within the banner.
@@ -38,7 +38,7 @@ The website will target traditional monitor resolutions of 1024X768 and greater.
 •	Standard Images: A banner image is included.
 •	Layout Location: Positioned at the top of the main content.
 
-### <section id="locations">:
+### section id="locations":
 •	Expected Use: This section lists the gym locations.
 •	Names (id=): locations
 •	Font Choices: Font family 'Bebas Neue' is used for the section title.
@@ -46,21 +46,21 @@ The website will target traditional monitor resolutions of 1024X768 and greater.
 •	Standard Images: Google Maps iframes are used to display maps. Size is 600x450px.
 •	Layout Location: Positioned below the banner section.
 
-### <section id="plans">:
+### section id="plans":
 •	Expected Use: This section displays gym membership plans.
 •	Names (id=): plans
 •	Font Choices: Font family 'Bebas Neue' is used for the section title and text within the cards.
 •	Color Choices: Background color is a specific shade of red (#C44536), and text is white.
 •	Layout Location: Positioned below the locations section.
 
-### <section id="timetable">:
+### section id="timetable":
 •	Expected Use: This section provides a class timetable.
 •	Names (id=): timetable
 •	Font Choices: Font family 'Bebas Neue' is used for the section title.
 •	Color Choices: Background color is white, and text colors are black.
 •	Layout Location: Positioned below the plans section.
 
-### <footer>:
+### footer:
 •	Expected Use: The footer section contains contact information and quick links.
 •	Names (id=): N/A
 •	Font Choices: Font family 'Bebas Neue' is used for some elements.
