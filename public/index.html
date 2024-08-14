@@ -7,28 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Muscle Forge Gym</title>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <script src="script.js" defer></script>
 </head>
 
-<body class="bg-blue-400">
-    <nav>
-        <ul>
-            <li><a href="index.html"><img src="images/logo.png" alt="Muscle Forge Logo" class="logo"></a></li>
-            <li><a href="index.html#timetable">Timetable</a></li>
-            <li><a href="index.html#contact-us">Contact</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="index.html#plans" class="plans">Plans</a></li>
-        </ul>
-    </nav>
+<body class="font-inter">
+    <div class="flex flex-row bg-black p-0">
+        <a href="index.html"><img src="images/logo.png" alt="Muscle Forge Logo"></a>
+        <a href="index.html#timetable">Timetable</a>
+        <a href="index.html#contact-us">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#plans">Plans</a>
+    </div>
     <main>
-        <section id="banner">
-            <div class="container">
-                <h1><span>Enroll today and receive:</span></h1>
-                <span class="banner-text">First Month Free Membership | Personal Training Session | Nutrition
-                    Consultation | Access to All Classes</span>
+        <section>
+            <div class="w-full h-[30rem] relative">
+                <div class="bg-[url('./images/banner.png')] absolute inset-0 bg-cover bg-center z-0"></div>
+                <div
+                    class="opacity-100 duration-300 p-5 absolute inset-0 z-10  flex flex-col justify-center items-center text-6xl font-semibold space-y-5">
+                    <h1 class="text-4xl text-[#e2c044] text-center"> Enroll today and receive:</h1>
+                    <ul class="text-2xl text-white pl-5 list-disc lg:list-none lg:flex lg:flex-row lg:space-x-2">
+                        <li class="banner-list-item">First Month Free Membership</li>
+                        <li class="banner-list-item">Personal Training Session</li>
+                        <li class="banner-list-item">Nutrition Consultation</li>
+                        <li class="banner-list-item">Access to All Classes</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
