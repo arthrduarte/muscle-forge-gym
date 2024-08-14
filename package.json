@@ -1,0 +1,15 @@
+{
+  "name": "muscle-forge-gym",
+  "version": "1.0.0",
+  "description": "This project is part of the \"Cross-Platform Web Design\" course in the \"Web Development and Internet Applications\" program at Algonquin College. The project involves designing a responsive and interactive website for a fictional gym called \"Muscle Forge Gym.\" The website provides information about the gym's services, locations, timetable, plans, and includes a gallery of images.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+  },
+  "author": "Arthur Duarte",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
