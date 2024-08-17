@@ -33,7 +33,7 @@ li a:hover {
 
 .plans {
     background-color: #C44536;
-    border-radius: 10px; 
+    border-radius: 10px;
     padding: 10px;
     text-align: center;
     color: #F1F1F1;
@@ -43,6 +43,7 @@ li a:hover {
     color: black;
     transition-duration: 0.2s;
 }
+
 .logo {
     width: 10%;
     align-items: center;
@@ -51,7 +52,7 @@ li a:hover {
 
 #banner {
     position: relative;
-    background:url(images/banner.png) no-repeat center;
+    background: url(images/banner.png) no-repeat center;
     background-size: cover;
     height: 30rem;
     overflow: hidden;
@@ -88,14 +89,15 @@ li a:hover {
     flex-wrap: wrap;
 }
 
-.locations-card{
+.locations-card {
     width: 33.33%;
     background-color: black;
-    color:#F1F1F1;
+    color: #F1F1F1;
     text-align: center;
 }
 
-.locations-card h1, .locations-card-black h1 {
+.locations-card h1,
+.locations-card-black h1 {
     font-size: 18pt;
     margin: 10px;
 }
@@ -111,13 +113,14 @@ iframe:hover {
 
 @keyframes bounceOut {
     0% {
-       transform: scale(1);
+        transform: scale(1);
     }
+
     100% {
-       opacity: 1;
-       transform: scale(.95);
+        opacity: 1;
+        transform: scale(.95);
     }
-} 
+}
 
 
 .plans-container {
@@ -132,7 +135,7 @@ iframe:hover {
     display: flex;
     text-align: center;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
     width: 20%;
     font-size: 20pt;
@@ -161,8 +164,8 @@ iframe:hover {
 #plans li {
     font-size: 20px;
     margin: 8px 0;
-    padding-left: 20px; 
-    position: relative; 
+    padding-left: 20px;
+    position: relative;
 }
 
 #plans li::before {
@@ -197,7 +200,7 @@ iframe:hover {
 
 .plans-price {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 .timetable-title {
@@ -208,13 +211,16 @@ iframe:hover {
 }
 
 #timetable {
-    padding:40px 0;
+    padding: 40px 0;
 }
 
 .timetable-container {
     text-align: center;
 }
-.timetable, .timetable td, .timetable th {
+
+.timetable,
+.timetable td,
+.timetable th {
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
@@ -233,7 +239,8 @@ iframe:hover {
     font-size: 16px;
 }
 
-.timetable td, .timetable th {
+.timetable td,
+.timetable th {
     font-size: 18pt;
 }
 
@@ -267,7 +274,9 @@ footer {
     width: 20%;
 }
 
-.footer-social, .footer-contact, .footer-pages {
+.footer-social,
+.footer-contact,
+.footer-pages {
     flex: 1;
 }
 
@@ -290,7 +299,8 @@ footer {
     margin-bottom: 5px;
 }
 
-.footer-contact input, .footer-contact textarea {
+.footer-contact input,
+.footer-contact textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -311,7 +321,7 @@ footer {
 }
 
 .footer-container h3 {
-    color:#C44536;
+    color: #C44536;
     font-size: 18pt;
 }
 

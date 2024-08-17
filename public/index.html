@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Muscle Forge Gym</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="font-inter">
+    <nav class="flex flex-row bg-black text-white p-3 justify-between px-[10rem]">
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="Muscle Forge Logo" class="w-[5rem]"></a>
+        </div>
+        <div class="lg:hidden my-auto cursor-pointer" id="burger-menu">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+        </div>
+        <div class="hidden lg:flex lg:items-center space-x-4 text-lg" id="nav-links">
+            <a class="hover:text-[#c44536] transition uppercase" href="index.html#contact-us">Contact</a>
+            <a class="hover:text-[#c44536] transition uppercase" href="gallery.html">Gallery</a>
+            <a class="hover:text-black bg-[#c44536] px-4 py-2 uppercase rounded" href="index.html#plans">Plans</a>
+        </div>
+    </nav>
+
+    <div class="lg:hidden bg-black text-white p-5 hidden" id="mobile-menu">
+        <a href="index.html#contact-us" class="block py-2">Contact</a>
+        <a href="gallery.html" class="block py-2">Gallery</a>
+        <a href="index.html#plans" class="block py-2">Plans</a>
+    </div>
+    <main>
+        <section>
+            <div class="w-full h-[30rem] relative font-bebas">
+                <div class="bg-[url('./images/banner.png')] opacity-80 absolute inset-0 bg-cover bg-center z-0"></div>
+                <!--Darker image-->
+                <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+                <div
+                    class="opacity-100 duration-300 p-5 lg:p-[5rem] absolute inset-0 z-10 flex flex-col justify-center items-center text-6xl font-semibold space-y-5">
+                    <h1 class="text-[4rem] lg:text-[5rem] text-[#e2c044] text-center lg:text-left w-full"> Enroll today
+                        and receive:
+                    </h1>
+                    <ul
+                        class="text-2xl lg:text-4xl font-light text-white list-disc lg:list-none lg:flex lg:w-full lg:text-left lg:flex-row lg:space-x-2">
+                        <li class="banner-list-item">First Month Free Membership</li>
+                        <li class="banner-list-item">Personal Training Session</li>
+                        <li class="banner-list-item">Nutrition Consultation</li>
+                        <li class="banner-list-item">Access to All Classes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="p-5">
+                <h1 class="text-center text-[4rem] lg:text-[5rem] font-bebas">Locations:</h1>
+                <div class="flex flex-col lg:grid lg:grid-cols-4 lg:space-y-0 lg:gap-5 lg:grid-rows-2 space-y-5 p-5">
+                    <div class="bg-black text-white p-5 rounded-lg text-center text-2xl space-y-3">
+                        <h3 class="text-[#c44536] text-[2rem] font-black font-bebas">Ottawa</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944273521482!2d-75.75979660847165!3d45.34993716647616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1697303741025!5m2!1sen!2sca"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                        <p class="text-sm text-gray-300 text-center">6am to 11pm</p>
+                    </div>
+                    <div class="bg-black text-white p-5 rounded-lg text-center text-2xl space-y-3">
+                        <h3 class="text-[#c44536] text-[2rem] font-black font-bebas">Vancouver</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944273521482!2d-75.75979660847165!3d45.34993716647616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1697303741025!5m2!1sen!2sca"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                        <p class="text-sm text-gray-300 text-center">6am to 11pm</p>
+
+                    </div>
+                    <div class="bg-black text-white p-5 rounded-lg text-center text-2xl space-y-3">
+                        <h3 class="text-[#c44536] text-[2rem] font-black font-bebas">Toronto</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944273521482!2d-75.75979660847165!3d45.34993716647616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1697303741025!5m2!1sen!2sca"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                        <p class="text-sm text-gray-300 text-center">6am to 11pm</p>
+
+                    </div>
+                    <div class="bg-black text-white p-5 rounded-lg text-center text-2xl space-y-3">
+                        <h3 class="text-[#c44536] text-[2rem] font-black font-bebas">Montreal</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944273521482!2d-75.75979660847165!3d45.34993716647616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1697303741025!5m2!1sen!2sca"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                        <p class="text-sm text-gray-300 text-center">6am to 11pm</p>
+                    </div>
+                    <div class="bg-black text-white p-5 rounded-lg text-center text-2xl space-y-3">
+                        <h3 class="text-[#c44536] text-[2rem] font-black font-bebas">Winnipeg</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944273521482!2d-75.75979660847165!3d45.34993716647616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1697303741025!5m2!1sen!2sca"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                        <p class="text-sm text-gray-300 text-center">6am to 11pm</p>
+                    </div>
+                    <div class="bg-black text-white p-5 rounded-lg text-center text-2xl space-y-3">
+                        <h3 class="text-[#c44536] text-[2rem] font-black font-bebas">Calgary</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944273521482!2d-75.75979660847165!3d45.34993716647616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1697303741025!5m2!1sen!2sca"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                        <p class="text-sm text-gray-300 text-center">6am to 11pm</p>
+                    </div>
+                    <div class="bg-black text-white p-5 rounded-lg text-center text-2xl space-y-3">
+                        <h3 class="text-[#c44536] text-[2rem] font-black font-bebas">Edmonton</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944273521482!2d-75.75979660847165!3d45.34993716647616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1697303741025!5m2!1sen!2sca"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                        <p class="text-sm text-gray-300 text-center">6am to 11pm</p>
+                    </div>
+                    <div class="bg-black text-white p-5 rounded-lg text-center text-2xl space-y-3">
+                        <h3 class="text-[#c44536] text-[2rem] font-black font-bebas">Mississauga</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944273521482!2d-75.75979660847165!3d45.34993716647616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1697303741025!5m2!1sen!2sca"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                        <p class="text-sm text-gray-300 text-center">6am to 11pm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="plans">
+            <div class="bg-[#c44536] px-5 py-10">
+                <h3 class="text-center pb-5 text-[4rem] lg:text-[5rem] text-white font-bebas">Plans</h3>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:space-x-5 lg:justify-around">
+                    <div
+                        class="text-center flex flex-col space-y-5 bg-white p-10 rounded-lg lg:h-[30rem] lg:w-[25rem] justify-between shadow-2xl transition hover:ring-4 hover:ring-gray-100">
+                        <div class="space-y-5">
+                            <h3 class="font-black font-bebas text-[2.5rem]">Standard 🤸</h3>
+                            <ul class="pl-5 list-disc text-left">
+                                <li>Access to gym facilities during regular hours.</li>
+                                <li>Participation in regular fitness classes.</li>
+                                <li>Basic nutrition guidance and resources.</li>
+                                <li>Standard access hours or specific days.</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-5">
+                            <h3 class="text-[2rem] font-bold font-bebas">$ 9,99/month</h3>
+                            <button
+                                class="bg-[#c44536] text-white px-5 py-2 rounded transition ease-in hover:bg-[#f56858]">ENROLL
+                                TODAY</button>
+                        </div>
+                    </div>
+                    <div
+                        class="text-center flex flex-col space-y-5 bg-white p-10 rounded-lg lg:h-[30rem] lg:w-[25rem] justify-between shadow-2xl transition hover:ring-4 hover:ring-gray-100">
+                        <div class="space-y-5">
+                            <h3 class="text-[2.5rem] font-black font-bebas">Fit 💪</h3>
+                            <ul class="pl-5 list-disc text-left">
+                                <li>Every benefit of STANDARD plan</li>
+                                <li>Unlimited access to all gym facilities..</li>
+                                <li>Participation in all fitness classes.</li>
+                                <li>Set number of personal training sessions per month.</li>
+                                <li>Personalized nutrition guide.</li>
+                                <li>24/7 access to the gym.</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-5">
+                            <h3 class="text-[2rem] font-bold font-bebas">$ 15,99/month</h3>
+                            <button
+                                class="bg-[#c44536] text-white px-5 py-2 rounded transition ease-in hover:bg-[#f56858]">ENROLL
+                                TODAY</button>
+                        </div>
+                    </div>
+                    <div
+                        class="text-center flex flex-col space-y-5 bg-white p-10 rounded-lg lg:h-[30rem] lg:w-[25rem] justify-between shadow-2xl transition hover:ring-4 hover:ring-gray-100">
+                        <div class="space-y-5">
+                            <h3 class="text-[2.5rem] font-black font-bebas">Premium 👑</h3>
+                            <ul class="pl-5 list-disc text-left">
+                                <li>Every benefit of FIT plan</li>
+                                <li>Priority personal training sessions with top trainers.</li>
+                                <li>Exclusive benefits, access to special events, and discounts on merchandise or
+                                    supplements.</li>
+                                <li>Locker access.</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-5">
+                            <h3 class="text-[2rem] font-bold font-bebas">$ 19,99/month</h3>
+                            <button
+                                class="bg-[#c44536] text-white px-5 py-2 rounded transition ease-in hover:bg-[#f56858]">ENROLL
+                                TODAY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact-us">
+        <div class="bg-black text-white space-y-5 lg:flex lg:flex-row py-10">
+            <div class="flex flex-col justify-center items-center lg:w-1/3">
+                <img src="images/logo.png" alt="Muscle Forge Logo" class="w-[5rem] h-[5rem]">
+                <a href="mailto:contact@muscleforge.com?subject=inquiry%20from%20website">
+                    <p>contact@muscleforge.com</p>
+                </a>
+                <p><u>@muscleforge</u> on all social media</p>
+            </div>
+            <div class="flex flex-col justify-center items-center lg:w-1/3">
+                <h3 class="text-[#c44536] font-semibold">Talk to us</h3>
+                <form id="" method="post" class="w-[75%]">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required
+                        class="w-full border border-gray-300 text-black text-sm rounded-lg p-2.5"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full border border-gray-300 text-black text-sm rounded-lg p-2.5"><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required
+                        class="w-full border border-gray-300 text-black text-sm rounded-lg p-2.5"></textarea><br>
+
+                    <button class="bg-[#c44536] px-4 py-2 rounded transition ease-in hover:bg-[#f56858]"
+                        type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="flex flex-col items-center lg:w-1/3">
+                <h3 class="text-[#c44536] font-semibold py-5">Quick Links</h3>
+                <ul class="flex flex-col items-center space-y-5 w-1/2">
+                    <li class="w-full text-center border-b-2 lg:border-b-0"><a href="index.html">Home</a></li>
+                    <li class="w-full text-center border-b-2 lg:border-b-0"><a
+                            href=" index.html#timetable">Timetable</a></li>
+                    <li class="w-full text-center border-b-2 lg:border-b-0"><a href="index.html#contact-us">Contact
+                            Us</a></li>
+                    <li class="w-full text-center border-b-2 lg:border-b-0"><a href="gallery.html">Gallery</a></li>
+                    <li class="w-full text-center border-b-2 lg:border-b-0"><a href="index.html#plans">Plans</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

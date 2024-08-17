@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Muscle Forge Gym</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="font-inter">
+    <nav class="flex flex-row bg-black text-white p-3 justify-between px-[10rem]">
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="Muscle Forge Logo" class="w-[5rem]"></a>
+        </div>
+        <div class="lg:hidden my-auto cursor-pointer" id="burger-menu">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+        </div>
+        <div class="hidden lg:flex lg:items-center space-x-4 text-lg" id="nav-links">
+            <a class="hover:text-[#c44536] transition uppercase" href="index.html#contact-us">Contact</a>
+            <a class="hover:text-[#c44536] transition uppercase" href="gallery.html">Gallery</a>
+            <a class="hover:text-black bg-[#c44536] px-4 py-2 uppercase rounded" href="index.html#plans">Plans</a>
+        </div>
+    </nav>
+    <main>
+        <section id="gallery">
+            <h1 class="text-center font-bebas pt-5 text-[4rem] lg:text-[5rem]">Gym Gallery</h1>
+            <div
+                class="flex flex-col p-5 text-sm space-y-5 lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:space-y-0 lg:gap-5">
+                <div class="space-y-2 flex flex-col items-center">
+                    <img class="object-cover w-[90%] h-[20rem]" src="images/gym1.jpg"
+                        alt="Photo by Max Rahubovskiy: https://www.pexels.com/photo/interior-of-modern-fitness-club-with-various-machines-and-equipment-7031705/">
+                    <p>Machine room</p>
+                </div>
+                <div class="space-y-2 flex flex-col items-center">
+                    <img class="object-cover w-[90%] h-[20rem]" class="object-cover w-[90%] h-[20rem]"
+                        src="images/gym2.jpg"
+                        alt="Photo by Joseph Wayne Buchanan: https://www.pexels.com/photo/man-in-red-and-black-shorts-1144864/">
+                    <p>Free weights room</p>
+                </div>
+                <div class="space-y-2 flex flex-col items-center">
+                    <img class="object-cover w-[90%] h-[20rem]" src="images/gym3.jpg"
+                        alt="Photo by Max Rahubovskiy: https://www.pexels.com/photo/various-fitness-machines-in-modern-spacious-gym-7031706/">
+                    <p>Functional room</p>
+                </div>
+                <div class="space-y-2 flex flex-col items-center">
+                    <img class="object-cover w-[90%] h-[20rem]" src="images/gym4.jpg"
+                        alt="Photo by William Choquette: https://www.pexels.com/photo/an-on-treadmill-1954524/">
+                    <p>Cardio room</p>
+                </div>
+                <div class="space-y-2 flex flex-col items-center">
+                    <img class="object-cover w-[90%] h-[20rem]" src="images/gym5.jpg"
+                        alt="Photo by Tima Miroshnichenko: https://www.pexels.com/photo/brawny-man-punching-a-punching-bag-5750816/">
+                    <p>Boxing room</p>
+                </div>
+                <div class="space-y-2 flex flex-col items-center">
+                    <img class="object-cover w-[90%] h-[20rem]" src="images/gym6.jpg"
+                        alt="Photo by the happiest face: https://www.pexels.com/photo/woman-in-black-shirt-and-black-pants-walking-on-brown-floor-tiles-2807152/">
+                    <p>Sports courts</p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer id="contact-us">
+        <div class="bg-black text-white space-y-5 lg:flex lg:flex-row py-10">
+            <div class="flex flex-col justify-center items-center lg:w-1/3">
+                <img src="images/logo.png" alt="Muscle Forge Logo" class="w-[5rem] h-[5rem]">
+                <a href="mailto:contact@muscleforge.com?subject=inquiry%20from%20website">
+                    <p>contact@muscleforge.com</p>
+                </a>
+                <p><u>@muscleforge</u> on all social media</p>
+            </div>
+            <div class="flex flex-col justify-center items-center lg:w-1/3">
+                <h3 class="text-[#c44536] font-semibold">Talk to us</h3>
+                <form id="" method="post" class="w-[75%]">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required
+                        class="w-full border border-gray-300 text-black text-sm rounded-lg p-2.5"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full border border-gray-300 text-black text-sm rounded-lg p-2.5"><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required
+                        class="w-full border border-gray-300 text-black text-sm rounded-lg p-2.5"></textarea><br>
+
+                    <button class="bg-[#c44536] px-4 py-2 rounded transition ease-in hover:bg-[#f56858]"
+                        type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="flex flex-col items-center lg:w-1/3">
+                <h3 class="text-[#c44536] font-semibold py-5">Quick Links</h3>
+                <ul class="flex flex-col items-center space-y-5 w-1/2">
+                    <li class="w-full text-center border-b-2 lg:border-b-0"><a href="index.html">Home</a></li>
+                    <li class="w-full text-center border-b-2 lg:border-b-0"><a
+                            href=" index.html#timetable">Timetable</a>
+                    </li>
+                    <li class="w-full text-center border-b-2 lg:border-b-0"><a href="index.html#contact-us">Contact
+                            Us</a></li>
+                    <li class="w-full text-center border-b-2 lg:border-b-0"><a href="gallery.html">Gallery</a></li>
+                    <li class="w-full text-center border-b-2 lg:border-b-0"><a href="index.html#plans">Plans</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
